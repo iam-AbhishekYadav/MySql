@@ -12,6 +12,7 @@
 # # What is SQL
 
 - SQL is a programming language used to interact with relational databases.
+- SQL is declarative programming language.
 - It allows users to store, retrieve, update, and manage data efficiently through simple commands.
 - It is used to perform CURD operations:
   - Create
@@ -43,10 +44,22 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 mysql>
 ```
+# # Some SQL Commands
 
+**1. `create database db_name ;`** ---> To Create Database  
+**2. `drop database db_name ;`** ---> To Delete Database  
+**3. `show database ;`** ---> To Show lists of all Database  
+**3. `show db_name ;`** ---> To select a specific database  
 
+# # SQL Data Types
 
+In SQL, data types define the kind of data that can be stored in a column or variables.
 
+<img src="https://github.com/user-attachments/assets/e5779e10-f972-44b4-bc89-52e2a6bc671a" width="600" height="700">
+
+> [!NOTE]
+> CHAR is for fixed length & VARCHAR is for variable length strings. Generally,
+VARCHAR is better as it only occupies necessary memory & works more efficiently.
 
 
 
