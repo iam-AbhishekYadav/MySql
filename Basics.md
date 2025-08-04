@@ -46,10 +46,12 @@ mysql>
 ```
 # # Some SQL Commands
 
-**1. `create database db_name ;`** ---> To Create Database  
-**2. `drop database db_name ;`** ---> To Delete Database  
-**3. `show database ;`** ---> To Show lists of all Database  
-**3. `show db_name ;`** ---> To select a specific database  
+**1. `CREATE DATABASE db_name ;`** ---> To Create Database  
+**2. `CREATE DATABASE IF NOT EXSIST db_name ;`** ---> To Create database if database is not exist  
+**3. `DROP DATABASE db_name ;`** ---> To Delete Database  
+**4. `DROP DATABASE IF EXISTS db_name ;`** ---> To Delete database if database is exist  
+**5. `SHOW DATABASE ;`** ---> To Show lists of all Database  
+**6. `USE db_name ;`** ---> To select/use a specific database  
 
 # # SQL Data Types
 
@@ -60,6 +62,76 @@ In SQL, data types define the kind of data that can be stored in a column or var
 > [!NOTE]
 > CHAR is for fixed length & VARCHAR is for variable length strings. Generally,
 VARCHAR is better as it only occupies necessary memory & works more efficiently.
+
+# # Tables in SQL
+
+The CREATE TABLE statement is used to create a new table in a database.
+
+### Syntax
+
+``` sql
+CREATE TABLE table_name (  
+    column1 datatype,  
+    column2 datatype,  
+    column3 datatype,  
+   ....  
+);
+```
+
+### Command used to make Table Database.
+
+**1. `create table tb_name ;`** ---> To create table in database  
+**2. `use db_name ;`** ---> To select a specific database  
+**3. `show tables ;`** ---> To Show tables in database  
+**4. `Insert`** ---> To insert values in database 
+
+``` mysql
+INSER INTO table_name
+(column_name_1, column_name_2)
+VALUES
+(col1_v1, col1_v2),
+(col2_v1, col2_v2);
+````
+**5. `select * from tb_name ;`** ---> To print/view table from database (* --> All)    
+
+``` mysql
+mysql> create database Movies_Database;
+Query OK, 1 row affected (0.079 sec)
+
+mysql> use Movies_Database;
+Database changed
+mysql> create table Movies (Name VARCHAR(100),Rating INTEGER);
+Query OK, 0 rows affected (0.223 sec)
+
+mysql> show tables;
++------------------+
+| Tables_in_movies |
++------------------+
+| movies           |
++------------------+
+1 row in set (0.019 sec)
+
+mysql> insert into movies (Name, Rating) values ("Avenges Infinity War", 5);
+Query OK, 1 row affected (0.087 sec)
+
+mysql> insert into movies (Name, Rating) values ("Iron Man", 4);
+Query OK, 1 row affected (0.061 sec)
+
+mysql> insert into movies (Name, Rating) values ("Spider Man", 4);
+Query OK, 1 row affected (0.239 sec)
+
+mysql> select * from movies;
++----------------------+--------+
+| Name                 | Rating |
++----------------------+--------+
+| Avenges Infinity War |      5 |
+| Iron Man             |      4 |
+| Spider Man           |      4 |
++----------------------+--------+
+3 rows in set (0.006 sec)
+
+mysql>
+```
 
 
 
