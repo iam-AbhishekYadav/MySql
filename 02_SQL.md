@@ -79,8 +79,42 @@ CREATE TABLE table_name (
 );
 ```
 
+# # Select in SQL
+
+- It is used to select any data from the database.
+- **Syntax** :
+  - **Basics Syntax** ---> `SELECT col1,col2 FROM table_name;`
+  - **To Select All** ---> `SELECT * FROM table_name;`
+
+### Example --->
+
+``` mysql
+create database school;
+use school;
+
+create table student (
+	rollno int primary key,
+	name varchar(50),
+	marks int not null,
+	grade varchar(1),
+	city varchar(20)
+);
+
+insert into Student
+	(rollno, name, marks, grade, city)
+values
+	(101, "anil", 78, "C", "Pune"),
+	(102, "bhumika", 93, "A", "Mumbai"),
+	(103, "chetan", 85, "B", "Mumbai"),
+	(104, "dhruv", 96, "A", "Delhi"),
+	(105, "emanuel", 12, "F", "Delhi"),
+	(106, "farah", 82, "B", "Delhi");
 
 
+select city from student;                        # Shows all city in table
+select distinct city from student;               # Shows Non Duplicate vales (city)
+select * from student;                           # Shows all table
+```
 
 
 
