@@ -70,8 +70,14 @@ CREATE TABLE temp (
 **6 `Check`**
 
 - It can limit the values allowed in a column
-
-
+- **Syntax** : 
+```
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype CHECK (condition),
+    ...
+);
+```
 
 
 
