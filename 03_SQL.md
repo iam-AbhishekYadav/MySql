@@ -128,7 +128,7 @@ FROM table_name ;
 
 ## Example ---> 
 
-``` musql
+``` mysql
 create database school;
 use school;
 
