@@ -1,0 +1,4 @@
+# MySql
+
+# # Table Related Queries
+
