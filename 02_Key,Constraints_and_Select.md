@@ -21,29 +21,6 @@
 
 <img src="https://github.com/user-attachments/assets/b245b2ae-58c5-4e2e-9ab7-627c6b2a4092" width="600" height="500">
 
-
-
-## Cascading for Foreign Key
-
-#### On Delete Cascade
-
-When we create a foreign key using this option, it deletes the referencing rows in the child table when the referenced row is deleted in the parent table which has a primary key.
-
-## On Update Cascade
-
-When we create a foreign key using UPDATE CASCADE the referencing rows are updated in the child table when the refrenced row is updated in the parent table which has a primary key.
-
-### Syntax :
-
-``` mysql
-CREATE TABLE student (
-id INT PRIMARY KEY ,
-courseId INT ,
-FOREGN KEY (courseId) REFRENCES course(id)
-ON DELETE CASCADE
-ON UPDATE CASCADE
-);
-```
 # # Constraints in SQL
 
 SQL constraints are used to specify rules for data in a table.
