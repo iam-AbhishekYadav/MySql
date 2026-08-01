@@ -15,10 +15,10 @@
 - SQL is declarative programming language.
 - It allows users to store, retrieve, update, and manage data efficiently through simple commands.
 - It is used to perform CURD operations:
-  - Create
-  - Read
-  - Update
-  - Delete
+  - **C**reate
+  - **R**ead
+  - **U**pdate
+  - **D**elete
 
 # # How to open MySql Console ??
 
