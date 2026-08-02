@@ -2,7 +2,7 @@
 
 # # Databases
 
-- Databases is a collection od data in a format that can be easily accessed (Digital).
+- Databases is a collection of data in a format that can be easily accessed (Digital).
 - It allows users and applications to easily access, update, and manipulate information.
 - Databases are managed using specialized software known as a Database Management System (DBMS).
 - DBMS facilitates the storage, retrieval, and manipulation of data.
