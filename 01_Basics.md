@@ -86,7 +86,7 @@ CREATE TABLE table_name (
 **4. `Insert`** ---> To insert values in database 
 
 ``` mysql
-INSER INTO table_name
+INSERT INTO table_name
 (column_name_1, column_name_2)
 VALUES
 (col1_v1, col1_v2),
