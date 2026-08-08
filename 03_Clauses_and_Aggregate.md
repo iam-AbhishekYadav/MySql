@@ -17,7 +17,7 @@ WHERE conditions;
 
 **1. `Arithemtic Operator`** ---> +, -, *, /, %  
 **2. `Comparision Operator`** ---> =, !=, >, >=, <, <=  
-**3. `Logical Operator`** ---> AND, OR, NOT, BETWEEN, ALL, LIKE, ANY  
+**3. `Logical Operator`** ---> AND, OR, NOT, BETWEEN, ALL, LIKE, ANY, IN
 **4. `Bitwise Operator`** ---> &( Bitwise AND), | (Bitwise OR)  
 
 ### Example --->
