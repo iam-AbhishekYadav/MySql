@@ -144,6 +144,7 @@ SELECT * FROM student;
 - **Syntax** :
   - **Basics Syntax** ---> `SELECT col1,col2 FROM table_name;`
   - **To Select All** ---> `SELECT * FROM table_name;`
+  - **To Shows Non Duplicate values** ---> `select distinct col1 from table_name;`
 
 ### Example --->
 
@@ -171,7 +172,7 @@ values
 
 
 select city from student;                        # Shows all city in table
-select distinct city from student;               # Shows Non Duplicate vales (city)
+select distinct city from student;               # Shows Non Duplicate values (city)
 select * from student;                           # Shows all table
 ```
 
