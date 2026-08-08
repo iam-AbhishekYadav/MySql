@@ -94,6 +94,9 @@ VALUES
 ````
 **5. `select * from tb_name ;`** ---> To print/view table from database (* --> All)    
 
+
+#### Example
+
 ``` mysql
 mysql> create database Movies_Database;
 Query OK, 1 row affected (0.079 sec)
