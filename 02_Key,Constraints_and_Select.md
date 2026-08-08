@@ -1,18 +1,18 @@
 # # MySql
 
-# # Keys in SQL
+---
 
-## Primary Key :
+## # Keys in SQL
 
-- It is column (or set of columns) in a table that uniquely identifies each row.
-- There is only 1 Primary Key (A unique Id).
-- It should be NOT null.
+- **(i) `Primary Key`** 
+	- It is column (or set of columns) in a table that uniquely identifies each row.
+	- There is only 1 Primary Key (A unique Id).
+	- It should be NOT null.
 
-## Foreign Key
-
-- A foreign key is a column (or set of columns) in a table that refers to the primary key
-- There can be multiple Foreign Keys.
-- Foreign Key have duplicate & null values.  
+- **(ii) `Foreign Key`** 
+	- A foreign key is a column (or set of columns) in a table that refers to the primary key
+	- There can be multiple Foreign Keys.
+	- Foreign Key have duplicate & null values.  
 
 ### Example :
  
@@ -21,7 +21,9 @@
 
 <img src="https://github.com/user-attachments/assets/b245b2ae-58c5-4e2e-9ab7-627c6b2a4092" width="600" height="500">
 
-# # Constraints in SQL
+---
+
+## # Constraints in SQL
 
 SQL constraints are used to specify rules for data in a table.
 
@@ -79,7 +81,64 @@ CREATE TABLE table_name (
 );
 ```
 
-# # Select in SQL
+
+#### Example
+
+```mysql
+CREATE DATABASE school;
+USE school;
+
+-- Parent table
+CREATE TABLE department (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50) UNIQUE NOT NULL
+);
+
+-- Student table
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    age INT CHECK (age >= 18),
+    city VARCHAR(50) DEFAULT 'Mumbai',
+    dept_id INT,
+    FOREIGN KEY (dept_id) REFERENCES department(dept_id)
+);
+
+-- Insert departments
+INSERT INTO department (dept_id, dept_name)
+VALUES
+    (1, 'Computer Science'),
+    (2, 'Commerce');
+
+-- Insert students
+INSERT INTO student (id, name, email, age, dept_id)
+VALUES
+    (101, 'Sagar', 'sagar@gmail.com', 22, 1),
+    (102, 'Raj', 'raj@gmail.com', 20, 2);
+
+SELECT * FROM student;
+```
+
+> Department Table (Parent)
+
+| dept_id | dept_name |
+|---:|---|
+| 1 | Computer Science |
+| 2 | Commerce |
+
+
+> Student Table
+
+| id | name | email | age | city | dept_id |
+|---:|---|---|---:|---|---:|
+| 101 | Sagar | sagar@gmail.com | 22 | Mumbai | 1 |
+| 102 | Raj | raj@gmail.com | 20 | Mumbai | 2 |
+
+
+---
+
+## # Select in SQL
 
 - It is used to select any data from the database.
 - **Syntax** :
