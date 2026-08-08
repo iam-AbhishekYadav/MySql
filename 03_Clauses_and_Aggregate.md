@@ -71,7 +71,7 @@ LIMIT number;
 ```
 SELECT col1, col2
 FROM table_name
-ORDER NY col_name(s) ASC/DESC;
+ORDER BY col_name(s) ASC/DESC;
 ```
 
 ## 4. Group By Clause
