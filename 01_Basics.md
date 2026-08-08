@@ -109,9 +109,9 @@ The CREATE TABLE statement is used to create a new table in a database.
 
 ``` sql
 CREATE TABLE table_name (  
-    column1 datatype,  
-    column2 datatype,  
-    column3 datatype,  
+    column1 datatype constraint,  
+    column2 datatype constraint,  
+    column3 datatype constraint,  
    ....  
 );
 ```
