@@ -97,6 +97,8 @@ VALUES
 
 #### Example
 
+- (i) In CMD
+
 ``` mysql
 mysql> create database Movies_Database;
 Query OK, 1 row affected (0.079 sec)
@@ -135,6 +137,34 @@ mysql> select * from movies;
 
 mysql>
 ```
+
+
+- (ii) In MySql WorkBech
+
+``` mysql
+create database school;
+use school;
+
+create table student (
+	id int primary key,
+    name varchar(50),
+    age int not null
+);
+
+
+INSERT INTO student
+(id, name, age)
+VALUES
+(1, 'Sagar', 22),
+(2, 'Raj', 20);
+
+select * FROM student;
+```
+
+| id | name  | age |
+|---:|-------|---:|
+| 1  | Sagar | 22  |
+| 2  | Raj   | 20  |
 
 
 
