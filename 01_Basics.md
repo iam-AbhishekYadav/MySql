@@ -1,6 +1,8 @@
 # # MySql
 
-# # Databases
+---
+
+## # Databases
 
 - Databases is a collection of data in a format that can be easily accessed (Digital).
 - It allows users and applications to easily access, update, and manipulate information.
@@ -9,7 +11,17 @@
 
 ## Types of Databases
 
-# # What is SQL
+- **(i) Relational Databse**
+  - Database stored in tabes
+  - Ex - Mysql
+
+- **(ii) Non-Relational Database**
+  - Database not stored in tabes
+  - Ex - MongoDB
+
+---
+
+## # What is SQL
 
 - SQL is a programming language used to interact with relational databases.
 - SQL is declarative programming language.
@@ -20,7 +32,7 @@
   - **U**pdate
   - **D**elete
 
-# # How to open MySql Console ??
+## # How to open MySql Console ??
 
 - Open Command Prompt (CMD)
 - Type **`mysql -u root -p`**
@@ -44,16 +56,10 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 mysql>
 ```
-# # Some SQL Commands
 
-**1. `CREATE DATABASE db_name ;`** ---> To Create Database  
-**2. `CREATE DATABASE IF NOT EXSIST db_name ;`** ---> To Create database if database is not exist  
-**3. `DROP DATABASE db_name ;`** ---> To Delete Database  
-**4. `DROP DATABASE IF EXISTS db_name ;`** ---> To Delete database if database is exist  
-**5. `SHOW DATABASE ;`** ---> To Show lists of all Database  
-**6. `USE db_name ;`** ---> To select/use a specific database  
+---
 
-# # SQL Data Types
+## # SQL Data Types
 
 In SQL, data types define the kind of data that can be stored in a column or variables.
 
@@ -63,7 +69,39 @@ In SQL, data types define the kind of data that can be stored in a column or var
 > CHAR is for fixed length & VARCHAR is for variable length strings. Generally,
 VARCHAR is better as it only occupies necessary memory & works more efficiently.
 
-# # Tables in SQL
+---
+
+## # Types of SQL Commands
+
+- **DDL (Data Definition Language)**  
+`CREATE`, `ALTER`, `RENAME`, `TRUNCATE`, `DROP`
+
+- **DQL (Data Query Language)**  
+`SELECT`
+
+- **DML (Data Manipulation Language)** 
+`INSERT`, `UPDATE`, `DELETE`
+
+- **DCL (Data Control Language)**  
+`GRANT` & `REVOKE` permission to users
+
+- **TCL (Transaction Control Language)**  
+`START TRANSACTION`, `COMMIT`, `ROLLBACK`
+
+---
+
+## # Some SQL Commands
+
+**1.** `CREATE DATABASE db_name ;` ---> To Create Database  
+**2.** `CREATE DATABASE IF NOT EXSIST db_name ;` ---> To Create database if database is not exist  
+**3.** `DROP DATABASE db_name ;` ---> To Delete Database  
+**4.** `DROP DATABASE IF EXISTS db_name ;` ---> To Delete database if database is exist  
+**5.** `SHOW DATABASE ;` ---> To Show lists of all Database  
+**6.** `USE db_name ;` ---> To select/use a specific database  
+
+---
+
+## # Tables in SQL
 
 The CREATE TABLE statement is used to create a new table in a database.
 
@@ -167,6 +205,7 @@ select * FROM student;
 | 2  | Raj   | 20  |
 
 
+---
 
 
 
